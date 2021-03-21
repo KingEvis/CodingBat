@@ -65,4 +65,8 @@ public class CodingBatMain {
         str = str.substring(0,3);
         return str+str+str;
     }
+    public String backAround(String str) {
+        char lastLetter = str.charAt(str.length()-1);
+        return lastLetter+str+lastLetter;
+    }
 }
