@@ -58,4 +58,11 @@ public class CodingBatMain {
         return str.substring(str.length()-1) + str.substring(1,str.length()-1) +
                 str.substring(0,1) ;
     }
+    public String front3(String str) {
+        if(str.length()<=3){
+            return str+str+str;
+        }
+        str = str.substring(0,3);
+        return str+str+str;
+    }
 }
