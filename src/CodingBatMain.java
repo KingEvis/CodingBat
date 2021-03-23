@@ -96,4 +96,10 @@ public class CodingBatMain {
     public boolean loneTeen(int a, int b) {
         return ((!(b>=13 && b<=19)&&(a>=13 && a<=19))||((b>=13 && b<=19))&&!(a>=13 && a<=19));
     }
+    public String delDel(String str) {
+        if (str.length()>=4 && str.substring(1,4).equals("del")){
+            return str.substring(0,1) + str.substring(4);
+        }
+        return str;
+    }
 }
