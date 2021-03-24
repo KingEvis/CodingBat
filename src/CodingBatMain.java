@@ -105,4 +105,20 @@ public class CodingBatMain {
     public boolean mixStart(String str) {
         return str.length()>=3&&str.substring(1,3).equals("ix");
     }
+    public String startOz(String str) {
+
+        str=str+"bb";
+        String firstLetter = str.substring(0,1);
+        String secondLetter = str.substring(1,2);
+        if (firstLetter.equals("o")&&secondLetter.equals("z")){
+            return firstLetter+secondLetter;
+        }
+        if (firstLetter.equals("o")){
+            return firstLetter;
+        }
+        if (secondLetter.equals("z")){
+            return secondLetter;
+        }
+        return "";
+    }
 }
