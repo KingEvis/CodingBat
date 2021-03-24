@@ -121,4 +121,16 @@ public class CodingBatMain {
         }
         return "";
     }
+    public int intMax(int a, int b, int c) {
+        if (a>b&&a>c){
+            return a;
+        }
+        if (b>c&&b>a){
+            return b;
+        }
+        if (c>b&&c>a){
+            return c;
+        }
+        return -1;
+    }
 }
