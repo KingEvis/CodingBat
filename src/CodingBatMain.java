@@ -136,4 +136,22 @@ public class CodingBatMain {
     public boolean in3050(int a, int b) {
         return (a>=40&&a<=50&&b>=40&&b<=50)||(a>=30&&a<=40&&b>=30&&b<=40);
     }
+    public int max1020(int a, int b) {
+        if ((a>20||a<10)&&(b>20||b<10)){
+            return 0;
+        }
+        if (a>b&&a<=20&&a>=10){
+            return a;
+        }
+        if (a>b&&b<=20&&b>=10&&a>20){
+            return b;
+        }
+        if (b>a&&b<=20&&b>=10){
+            return b;
+        }
+        if (b>a&&a<=20&&a>=10&&b>20){
+            return a;
+        }
+        return -1;
+    }
 }
