@@ -154,4 +154,7 @@ public class CodingBatMain {
         }
         return -1;
     }
+    public boolean lastDigit(int a, int b) {
+        return (a%10==b%10);
+    }
 }
