@@ -157,4 +157,12 @@ public class CodingBatMain {
     public boolean lastDigit(int a, int b) {
         return (a%10==b%10);
     }
+    public String endUp(String str) {
+        if(str.length()<=3){
+            return str.toUpperCase();
+        }
+        String lastThree = str.substring(str.length()-3);
+        return (str.substring(0,str.length()-3)+lastThree.toUpperCase());
+    }
+
 }
