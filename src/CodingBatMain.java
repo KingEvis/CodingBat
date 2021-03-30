@@ -164,5 +164,25 @@ public class CodingBatMain {
         String lastThree = str.substring(str.length()-3);
         return (str.substring(0,str.length()-3)+lastThree.toUpperCase());
     }
-
+    public int close10(int a, int b) {
+        int aDiff;
+        int bDiff;
+        if(a<0){
+            aDiff = -1*a+10;
+        }else{
+            aDiff = Math.abs(10-a);
+        }
+        if(b<0){
+            bDiff = -1*b+10;
+        }else{
+            bDiff = Math.abs(10-b);
+        }
+        if (aDiff==bDiff){
+            return 0;
+        }
+        if (aDiff>bDiff){
+            return b;
+        }
+        return a;
+    }
 }
