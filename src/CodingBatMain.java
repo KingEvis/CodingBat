@@ -194,4 +194,11 @@ public class CodingBatMain {
         }
         return eCount==1||eCount==2||eCount==3;
     }
+    public String stringTimes(String str, int n) {
+        String result="";
+        for (int i = 0; i <n; i++){
+            result=result+str;
+        }
+        return result;
+    }
 }
