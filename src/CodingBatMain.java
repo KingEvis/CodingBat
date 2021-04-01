@@ -201,4 +201,18 @@ public class CodingBatMain {
         }
         return result;
     }
+    public String frontTimes(String str, int n) {
+        String result="";
+        if(str.length()<=3){
+            result=str;
+        }
+        else{
+            result=str.substring(0,3);
+        }
+        String finalResult="";
+        for (int i = 0; i <n; i++){
+            finalResult=finalResult+result;
+        }
+        return finalResult;
+    }
 }
