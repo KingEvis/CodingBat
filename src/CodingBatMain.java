@@ -194,6 +194,7 @@ public class CodingBatMain {
         }
         return eCount==1||eCount==2||eCount==3;
     }
+//    Warmup-2 > stringTimes
     public String stringTimes(String str, int n) {
         String result="";
         for (int i = 0; i <n; i++){
@@ -214,5 +215,29 @@ public class CodingBatMain {
             finalResult=finalResult+result;
         }
         return finalResult;
+    }
+    int countXX(String str) {
+        int length =str.length();
+        int xNumber=0;
+        for (int i = 0; i>=length;i++){
+            if (str.charAt(i)=='x'){
+                xNumber++;
+            }
+        }return xNumber;
+
+    }
+    boolean doubleX(String str) {
+        String strPlius = str+"empty";
+        int length =strPlius.length();
+        for (int i = 0; i<=length-1;i++){
+            if ((strPlius.charAt(i)=='x')&&(strPlius.charAt(i+1)!='x')){
+                return false;
+            }
+            else if((strPlius.charAt(i)=='x')&&(strPlius.charAt(i+1)=='x')){
+                return true;
+            }
+
+        }
+        return false;
     }
 }
